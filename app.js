@@ -133,42 +133,42 @@ const themes = {
     faviconIco: "./assets/logo/favicon/faviconGreen.ico",
 
     sectIllus3: {
-      src: "./assets/illustration-realiste/meridiensPortrait-320.webp",
+      src: "./assets/realistic/meridiensPortrait-320.webp",
       srcset: `
-    ./assets/illustration-realiste/meridiensPortrait-320.webp 320w,
-    ./assets/illustration-realiste/meridiensPortrait-640.webp 640w
+    ./assets/realistic/meridiensPortrait-320.webp 320w,
+    ./assets/realistic/meridiensPortrait-640.webp 640w
     `,
     },
 
     sectIllus4: {
-      src: "./assets/illustration-realiste/soinsPourTous-320.webp",
+      src: "./assets/realistic/soinsPourTous-320.webp",
       srcset: `
-    ./assets/illustration-realiste/soinsPourTous-320.webp 320w,
-    ./assets/illustration-realiste/soinsPourTous-640.webp 640w
+    ./assets/realistic/soinsPourTous-320.webp 320w,
+    ./assets/realistic/soinsPourTous-640.webp 640w
     `,
     },
 
     sectIllus5: {
-      src: "./assets/illustration-realiste/seanceResc-320.webp",
+      src: "./assets/realistic/seanceResc-320.webp",
       srcset: `
-    ./assets/illustration-realiste/seanceResc-320.webp 320w,
-    ./assets/illustration-realiste/seanceResc-640.webp 640w
+    ./assets/realistic/seanceResc-320.webp 320w,
+    ./assets/realistic/seanceResc-640.webp 640w
     `,
     },
 
     sectIllus6: {
-      src: "./assets/illustration-realiste/tarification-320.webp",
+      src: "./assets/realistic/tarification-320.webp",
       srcset: `
-    ./assets/illustration-realiste/tarification-320.webp 320w,
-    ./assets/illustration-realiste/tarification-640.webp 640w
+    ./assets/realistic/tarification-320.webp 320w,
+    ./assets/realistic/tarification-640.webp 640w
     `,
     },
 
     sectIllus7: {
-      src: "./assets/illustration-realiste/questions-320.webp",
+      src: "./assets/realistic/questions-320.webp",
       srcset: `
-    ./assets/illustration-realiste/questions-320.webp 320w,
-    ./assets/illustration-realiste/questions-640.webp 640w
+    ./assets/realistic/questions-320.webp 320w,
+    ./assets/realistic/questions-640.webp 640w
     `,
     },
   },
