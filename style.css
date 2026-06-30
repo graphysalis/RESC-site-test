@@ -1,0 +1,972 @@
+:root[data-theme="green"] {
+  --color1: rgb(249, 247, 243);
+  --color2: rgb(158, 243, 225);
+  --color3: rgb(85, 170, 145);
+  --color4: rgb(45, 119, 96);
+  --color5: rgb(44, 87, 75);
+
+  --wave1-image: url("./assets/waves/wave3Green.webp");
+  --wave2-image: url("./assets/waves/wave1Green.webp");
+  --wave3-image: url("./assets/waves/wave2Green.webp");
+  --wave-saturation: 1;
+  --virginie: url("./assets/illustration-realiste/portraitProfil-640.webp");
+  --drop-image: url("./assets/logo/logoh2Green.webp");
+  --bxShadow: inset 0 0 20px rgba(45, 119, 96);
+  --logoFooter-url: url("./assets/logo/logoWhiteGreen.webp");
+  --phoneIcon-url: url("./assets/icons/phoneIconGreen.png");
+  --scrollLogo: url("./assets/logo/logoTranspGreen.png");
+
+  --accImage: url("./assets/illustration-realiste/contact-1280.webp");
+}
+
+:root[data-theme="pink"] {
+  --color1: rgb(249, 247, 243);
+  --color2: rgb(243, 158, 206);
+  --color3: rgb(169, 85, 141);
+  --color4: rgb(119, 45, 98);
+  --color5: rgb(87, 44, 73);
+
+  --wave1-image: url("./assets/waves/wave3Pink.webp");
+  --wave2-image: url("./assets/waves/wave1Pink.webp");
+  --wave3-image: url("./assets/waves/wave2Pink.webp");
+  --wave-saturation: 1;
+  --virginie: url("./assets/portraitProfil-640.webp");
+  --drop-image: url("./assets/logo/logoh2Pink.webp");
+  --bxShadow: inset 0 0 20px rgba(119, 45, 98);
+  --logoFooter-url: url("./assets/logo/logoWhitePink.webp");
+  --phoneIcon-url: url("./assets/icons/phoneIconPink.png");
+  --scrollLogo: url("./assets/logo/logoTranspPink.png");
+
+  --accImage: url("./assets/contact-1280.webp");
+}
+
+:root[data-theme="blue"] {
+  --color1: rgb(249, 247, 243);
+  --color2: rgb(158, 220, 243);
+  --color3: rgb(85, 144, 169);
+  --color4: rgb(45, 97, 119);
+  --color5: rgb(44, 71, 87);
+
+  --wave1-image: url("./assets/waves/wave3Blue.webp");
+  --wave2-image: url("./assets/waves/wave1Blue.webp");
+  --wave3-image: url("./assets/waves/wave2Blue.webp");
+  --wave-saturation: 2;
+  --virginie: url("./assets/portraitProfil-640.webp");
+  --drop-image: url("./assets/logo/logoh2Blue.webp");
+  --bxShadow: inset 0 0 20px rgba(45, 97, 119);
+  --logoFooter-url: url("./assets/logo/logoWhiteBlue.webp");
+  --phoneIcon-url: url("./assets/icons/phoneIconBlue.png");
+  --scrollLogo: url("./assets/logo/logoTranspBlue.png");
+
+  --accImage: url("./assets/contact-1280.webp");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color1);
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: fit-content;
+  transition: 0.5s all ease-in-out;
+  z-index: 1000;
+}
+
+.headerTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  background-color: var(--color3);
+  box-shadow: inset 0px 0px 20px var(--color5);
+  transition: 0.5s all ease-in-out;
+}
+
+.logoBanner {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 75px;
+  height: 45px;
+  background-image: url("./assets/logo/logoTranspWhite.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.leftSide {
+  width: 70%;
+  text-align: left;
+}
+
+.contact,
+.tel {
+  padding: 10px;
+}
+
+.contact a,
+.tel a {
+  font-size: 1.2rem;
+  color: var(--color1);
+  padding: 5px;
+  text-shadow:
+    -1px -1px 0 var(--color4),
+    1px -1px 0 var(--color4),
+    -1px 1px 0 var(--color4),
+    1px 1px 0 var(--color4);
+  border: 1px solid transparent;
+}
+
+.contact a:hover,
+.tel a:hover {
+  border: 1px solid var(--color1);
+  border-radius: 15px;
+}
+
+.rightSide {
+  width: 30%;
+  text-align: right;
+}
+
+.socialLinks {
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.socialLinks a {
+  margin-right: 10px;
+}
+
+.socialLinks a:nth-child(1) img {
+  border: 1px solid var(--color1);
+  border-radius: 20px;
+}
+
+.socialLinks a:nth-child(2) img {
+  border: 1px solid var(--color1);
+  border-radius: 10px;
+}
+
+.socialLinks a:nth-child(1) img:hover {
+  border: 2px solid var(--color1);
+}
+
+.socialLinks a:nth-child(2) img:hover {
+  border: 2px solid var(--color1);
+}
+
+.headerNav {
+  position: absolute;
+  top: 84px;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  background-color: var(--color1);
+  border-top: 2px solid var(--color5);
+  box-shadow: 0px 1px 5px var(--color3);
+  transition: 0.5s all ease-in-out;
+}
+
+.titleAndBtn {
+  width: 100%;
+}
+
+.headerNav .title {
+  position: relative;
+  width: 400px;
+  height: fit-content;
+  font-size: 2rem;
+  margin-left: 20px;
+  color: var(--color5);
+  transition: 0.5s all ease-in-out;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navUlDisplay {
+  display: block;
+  text-align: center;
+}
+
+nav ul li {
+  padding-left: 20px;
+}
+
+.menu-link {
+  color: var(--color5);
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s all ease-in-out;
+}
+
+.menu-link:hover {
+  color: var(--color3);
+}
+
+.menu-link.active {
+  color: var(--color3);
+  border-top: 2px solid var(--color3);
+  font-style: italic;
+}
+
+/*******Button Menu***********/
+.btnMenu {
+  display: none;
+  position: absolute;
+  right: 35px;
+  top: 3px;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btnMenuItem {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 28px;
+  height: 2px;
+  background-color: var(--color5);
+  transition: 0.4s all ease-in-out;
+}
+
+.btnMenuTxt {
+  position: absolute;
+  left: -50px;
+  top: 25%;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color5);
+}
+
+.it1 {
+  top: 10px;
+}
+.it2 {
+  top: 50%;
+}
+.it3 {
+  bottom: 8px;
+}
+
+.rotateRight {
+  transform: rotateZ(135deg);
+  left: 3px;
+  top: 45%;
+}
+.rotateLeft {
+  transform: rotateZ(-135deg);
+  left: 3px;
+  top: 45%;
+}
+
+.removeIt2 {
+  width: 0;
+}
+
+/******* waves ***********/
+.wavesContainer {
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  overflow-x: hidden;
+  z-index: 900;
+}
+
+.waves {
+  position: relative;
+  height: 350px;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-size: 1500px 200px;
+  animation: wavesMove 4s infinite linear;
+  filter: saturate(var(--wave-saturation));
+}
+
+#wave1 {
+  background-image: var(--wave1-image);
+}
+#wave2 {
+  background-image: var(--wave2-image);
+}
+#wave3 {
+  background-image: var(--wave3-image);
+}
+
+/**bouton changement de thème**/
+.themeBtn {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  left: 5px;
+  bottom: 5px;
+  z-index: 1200;
+}
+
+.themeBtn > * {
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+
+.themeBtn > *:hover {
+  transform: scale(1.05);
+}
+
+.themeBtn > *:focus,
+.themeBtn > *:focus-visible {
+  transform: scale(0.8);
+  border: 2px solid black;
+  transition: border-color 0.2s ease;
+}
+
+#themeBlue {
+  background-color: rgb(85, 144, 169);
+}
+
+#themePink {
+  background-color: rgb(169, 85, 141);
+}
+
+#themeGreen {
+  background-color: rgb(85, 170, 145);
+}
+
+main {
+  display: block;
+  width: 100%;
+}
+
+section {
+  width: 70vw;
+  margin: 20px auto 0;
+  padding: 25px;
+}
+
+#linkSect1 {
+  height: 100px;
+}
+
+#sect1 {
+  width: 100%;
+  margin: 0;
+  padding: 0 0 100px 0;
+}
+
+.accroche {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  text-align: center;
+  background-image: var(--accImage);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 45px;
+}
+
+.accrocheTextContainer {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#accrocheText {
+  font-size: 2.5rem;
+  color: var(--color4);
+  line-height: 50px;
+}
+
+.initiale {
+  color: var(--color1);
+  font-weight: bold;
+  font-size: 1.2em;
+  animation: colorPulse 2s ease-out forwards;
+}
+
+.nom {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color4);
+  margin-top: 20px;
+}
+
+.linkSect {
+  width: 50%;
+  margin: auto;
+  height: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: var(--color5);
+}
+
+h1 span {
+  display: block;
+}
+
+.subtitle {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  border-top: 3px solid var(--color4);
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: var(--color3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle h2 {
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: var(--color1);
+  text-shadow:
+    -1px -1px 0 var(--color4),
+    1px -1px 0 var(--color4),
+    -1px 1px 0 var(--color4),
+    1px 1px 0 var(--color4);
+  z-index: 500;
+}
+
+.drop {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -5px;
+  left: 5px;
+  border-top-left-radius: 40px;
+  background-image: var(--drop-image);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 40px auto;
+  text-align: center;
+  color: var(--color5);
+}
+
+h4 {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+#sect2 .photoVirginie {
+  width: 200px;
+  height: 250px;
+  border-radius: 15px;
+  margin: 20px auto 0;
+  background-image: var(--virginie);
+  background-position: center;
+  background-size: cover;
+  top: 20px;
+  right: 0;
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+}
+
+.sectIllus {
+  position: relative;
+  width: 320px;
+  height: 210px;
+  margin: auto;
+  border-left: 2px solid var(--color3);
+  border-bottom: 2px solid var(--color3);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.sectIllus::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: var(--bxShadow);
+  pointer-events: none;
+}
+
+#sectIllus3,
+#sectIllus4,
+#sectIllus5,
+#sectIllus6,
+#sectIllus7 {
+  position: absolute;
+  transform-origin: center center;
+  width: 100%;
+  height: auto;
+  transition: transform 2s ease;
+}
+
+.telbis,
+.contactbis {
+  width: 280px;
+  height: fit-content;
+  margin: 20px auto;
+  padding: 0;
+  text-align: center;
+  background-color: var(--color3);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 2px solid var(--color4);
+}
+
+.telbis h3,
+.contactbis h3 {
+  font-size: 1.4rem;
+  margin: 0px;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  background-color: var(--color1);
+}
+
+.telbis a,
+.contactbis a {
+  font-size: 1.4rem;
+  color: var(--color1);
+  text-shadow:
+    -1px -1px 0 var(--color4),
+    1px -1px 0 var(--color4),
+    -1px 1px 0 var(--color4),
+    1px 1px 0 var(--color4);
+  transition: text-shadow 0.2s ease;
+}
+
+.telbis a:hover,
+.contactbis a:hover {
+  text-shadow: none;
+}
+
+/*****animCTA****/
+.animCTA {
+  width: fit-content;
+  margin: auto;
+}
+
+.animCTA a {
+  position: relative;
+  color: var(--color5);
+  padding: 0.7em 0.84em;
+  display: inline-block;
+  border: 3px solid transparent;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.animCTA a .ctaContent {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.animCTA a .phoneIcon {
+  width: 20px;
+  height: 20px;
+  background-image: var(--phoneIcon-url);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.animCTA a .text,
+.animCTA a .phoneIcon {
+  transform: translate3d(0, 0.7em, 0);
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+
+.animCTA a::after {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  left: 0.84em;
+  right: 0.84em;
+  height: 3px;
+  background: var(--color4);
+  transition:
+    transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s,
+    right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s,
+    left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  transform-origin: left;
+}
+
+.animCTA .line {
+  position: absolute;
+  background: var(--color4);
+}
+
+.animCTA .line.-right,
+.animCTA .line.-left {
+  width: 3px;
+  bottom: -3px;
+  top: -3px;
+  transform: scale3d(1, 0, 1);
+}
+
+.animCTA .line.-top,
+.animCTA .line.-bottom {
+  height: 3px;
+  left: -3px;
+  right: -3px;
+  transform: scale3d(0, 1, 1);
+}
+
+.animCTA .line.-right {
+  right: -3px;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  transform-origin: top;
+}
+
+.animCTA .line.-top {
+  top: -3px;
+  transition: transform 0.08s linear 0.43s;
+  transform-origin: left;
+}
+
+.animCTA .line.-left {
+  left: -3px;
+  transition: transform 0.08s linear 0.51s;
+  transform-origin: bottom;
+}
+
+.animCTA .line.-bottom {
+  bottom: -3px;
+  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  transform-origin: right;
+}
+
+.animCTA a:hover .text,
+.animCTA a:active .text,
+.animCTA a:hover .phoneIcon,
+.animCTA a:active .phoneIcon {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+
+.animCTA a:hover::after,
+.animCTA a:active::after {
+  transform: scale3d(0, 1, 1);
+  right: -3px;
+  left: -3px;
+  transform-origin: right;
+  transition:
+    transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s,
+    right 0.2s cubic-bezier(1, 0, 0.65, 1.01),
+    left 0s 0.3s;
+}
+
+.animCTA a:hover .line,
+.animCTA a:active .line {
+  transform: scale3d(1, 1, 1);
+}
+
+.animCTA a:hover .line.-right,
+.animCTA a:active .line.-right {
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  transform-origin: bottom;
+}
+
+.animCTA a:hover .line.-top,
+.animCTA a:active .line.-top {
+  transition: transform 0.08s linear 0.4s;
+  transform-origin: right;
+}
+
+.animCTA a:hover .line.-left,
+.animCTA a:active .line.-left {
+  transition: transform 0.08s linear 0.48s;
+  transform-origin: top;
+}
+
+.animCTA a:hover .line.-bottom,
+.animCTA a:active .line.-bottom {
+  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  transform-origin: left;
+}
+/*****animCTAend****/
+
+.mapContainer {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+.map {
+  margin: auto;
+  width: 90%;
+  height: 300px;
+  background-image: url("./assets/map01.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#sect8 p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.logoContainer {
+  width: fit-content;
+  margin: auto;
+}
+
+.logoFooter {
+  width: 140px;
+  height: 140px;
+  background-image: var(--logoFooter-url);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+footer {
+  padding-top: 20px;
+  width: 100%;
+  height: fit-content;
+  background-color: var(--color3);
+  box-shadow: inset 0px 3px 3px var(--color5);
+}
+
+footer .contact,
+footer .tel,
+footer .socialLinks,
+footer .cguMl,
+footer .copyright {
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+}
+
+footer .contact a,
+footer .tel a {
+  font-size: 1.2rem;
+  border: 1px solid transparent;
+  border-radius: 15px;
+}
+
+footer .socialLinks a {
+  margin: 0 10px;
+}
+
+.cguMl {
+  padding: 10px;
+}
+
+.cguMl a {
+  color: var(--color1);
+  text-shadow:
+    -1px -1px 0 var(--color4),
+    1px -1px 0 var(--color4),
+    -1px 1px 0 var(--color4),
+    1px 1px 0 var(--color4);
+  font-size: 1.2rem;
+  padding: 5px;
+  border: 1px solid transparent;
+}
+
+.cguMl a:hover {
+  border: 1px solid var(--color1);
+  border-radius: 15px;
+}
+
+footer .copyright {
+  width: 100%;
+  background-color: var(--color5);
+  font-size: 0.8rem;
+  color: var(--color1);
+  padding: 10px;
+}
+
+/* =========================
+   Overlay transition scroll
+========================= */
+
+#scrollOverlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(249, 247, 243, 0.65);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+#scrollOverlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+#scrollOverlay.active #scrollLogo {
+  animation: waterPop 0.8s ease-out;
+}
+
+#scrollLogo {
+  width: 120px;
+  max-width: 30vw;
+  height: 120px;
+  max-height: 30vw;
+  background-image: var(--scrollLogo);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/**bouton retour au top**/
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color4);
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+#backToTop:hover {
+  background-color: var(--color3);
+}
+
+/**  dotnav **/
+#dotNav {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+}
+
+#dotNav div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #999;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#dotNav div.active {
+  opacity: 1;
+  transform: scale(1.2);
+  background: var(--color4);
+}
+
+/*********************************/
+/****** keyframes animation******/
+@keyframes wavesMove {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1500px;
+  }
+}
+
+@keyframes colorPulse {
+  0% {
+    color: var(--color1);
+  }
+  100% {
+    color: var(--color4);
+  }
+}
+
+@keyframes waterPop {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+
+  70% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

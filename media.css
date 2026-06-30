@@ -1,0 +1,258 @@
+@media screen and (max-height: 730px) {
+  nav ul li {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .navUlDisplay {
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .btnMenu {
+    display: block;
+    margin-top: 10px;
+    z-index: 2000;
+  }
+
+  .headerNav {
+    width: 100%;
+    padding: 10px 0 10px 0;
+  }
+
+  .headerNav .title {
+    padding: 2px 0 5px 0;
+    margin-left: 5px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    padding: 10px 0 10px 20px;
+  }
+
+  section {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #sect8 p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .accrocheTextContainer {
+    align-items: end;
+    padding-bottom: 10px;
+  }
+
+  #accrocheText {
+    font-size: 1.8rem;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .waves {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .headerNav .title {
+    padding: 2px 0 5px 0;
+    margin-left: 5px;
+    font-size: 1.5rem;
+  }
+
+  .waves {
+    height: 280px;
+  }
+
+  .subtitle h2 {
+    font-size: 1.5rem;
+  }
+
+  .accroche {
+    margin-top: 35px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .headerTop {
+    display: block;
+  }
+
+  .rightSide,
+  .leftSide {
+    width: 100%;
+    text-align: center;
+  }
+
+  .socialLinks a {
+    margin: 0px 15px;
+  }
+
+  .headerNav {
+    top: 134px;
+  }
+
+  nav ul li {
+    padding-right: 10px;
+  }
+
+  .btnMenu {
+    right: 20px;
+    top: 2px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .btnMenuItem {
+    width: 25px;
+  }
+  .it1 {
+    top: 7px;
+  }
+  .it2 {
+    top: 50%;
+  }
+  .it3 {
+    bottom: 5px;
+  }
+
+  .rotateRight {
+    transform: rotateZ(135deg);
+    left: 5px;
+    top: 45%;
+  }
+  .rotateLeft {
+    transform: rotateZ(-135deg);
+    left: 5px;
+    top: 45%;
+  }
+  .removeIt2 {
+    width: 0;
+  }
+
+  .waves {
+    height: 320px;
+  }
+
+  .accroche {
+    margin-top: 80px;
+  }
+
+  .nom {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #accrocheText {
+    font-size: 1.5rem;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .subtitle {
+    height: 70px;
+  }
+
+  .drop {
+    height: 70px;
+    width: 70px;
+    left: 5px;
+  }
+
+  .subtitle h2 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  #accrocheText {
+    font-size: 1.2rem;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .btnMenuTxt {
+    display: none;
+  }
+
+  .sectIllus {
+    width: 220px;
+    height: 145px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  h1 {
+    font-size: 1rem;
+  }
+
+  .drop {
+    height: 50px;
+    width: 50px;
+    top: 5px;
+    left: 2px;
+  }
+
+  .subtitle {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .subtitle h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .telbis,
+  .contactbis {
+    width: 90vw;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    height: fit-content;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .headerNav .title {
+    padding: 5px 0 7px 0;
+    font-size: 1.2rem;
+  }
+
+  #accrocheText {
+    font-size: 1rem;
+  }
+}
