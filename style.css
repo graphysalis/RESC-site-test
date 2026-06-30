@@ -9,14 +9,14 @@
   --wave2-image: url("./assets/waves/wave1Green.webp");
   --wave3-image: url("./assets/waves/wave2Green.webp");
   --wave-saturation: 1;
-  --virginie: url("./assets/illustration-realiste/portraitProfil-640.webp");
+  --virginie: url("./assets/realistic/portraitProfil-640.webp");
   --drop-image: url("./assets/logo/logoh2Green.webp");
   --bxShadow: inset 0 0 20px rgba(45, 119, 96);
   --logoFooter-url: url("./assets/logo/logoWhiteGreen.webp");
   --phoneIcon-url: url("./assets/icons/phoneIconGreen.png");
   --scrollLogo: url("./assets/logo/logoTranspGreen.png");
 
-  --accImage: url("./assets/illustration-realiste/contact-1280.webp");
+  --accImage: url("./assets/realistic/contact-1280.webp");
 }
 
 :root[data-theme="pink"] {
