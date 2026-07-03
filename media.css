@@ -75,6 +75,11 @@
     font-size: 1.5rem;
   }
 
+  .btnMenu {
+    right: 20px;
+    top: 0;
+  }
+
   .waves {
     height: 280px;
   }
@@ -115,40 +120,6 @@
     padding-right: 10px;
   }
 
-  .btnMenu {
-    right: 20px;
-    top: 2px;
-    width: 34px;
-    height: 34px;
-  }
-
-  .btnMenuItem {
-    width: 25px;
-  }
-  .it1 {
-    top: 7px;
-  }
-  .it2 {
-    top: 50%;
-  }
-  .it3 {
-    bottom: 5px;
-  }
-
-  .rotateRight {
-    transform: rotateZ(135deg);
-    left: 5px;
-    top: 45%;
-  }
-  .rotateLeft {
-    transform: rotateZ(-135deg);
-    left: 5px;
-    top: 45%;
-  }
-  .removeIt2 {
-    width: 0;
-  }
-
   .waves {
     height: 320px;
   }
@@ -175,8 +146,8 @@
   }
 
   .drop {
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     left: 5px;
   }
 
@@ -217,13 +188,6 @@
     font-size: 1rem;
   }
 
-  .drop {
-    height: 50px;
-    width: 50px;
-    top: 5px;
-    left: 2px;
-  }
-
   .subtitle {
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -256,3 +220,4 @@
     font-size: 1rem;
   }
 }
+
