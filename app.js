@@ -33,10 +33,10 @@ const faviconIco = document.getElementById("faviconIco");
 
 const themes = {
   pink: {
-    favicon32: "./assets/logo/favicon/favicon-32Pink.png",
-    favicon96: "./assets/logo/favicon/favicon-96Pink.png",
-    favicon192: "./assets/logo/favicon/favicon-192Pink.png",
-    faviconIco: "./assets/logo/favicon/faviconPink.ico",
+    favicon32: "./assets/logo/favicon/faviconZen/faviconZenDarkPink2-32.png",
+    favicon96: "./assets/logo/favicon/faviconZen/faviconZenDarkPink2-96.png",
+    favicon192: "./assets/logo/favicon/faviconZen/faviconZenDarkPink2-192.png",
+    faviconIco: "./assets/logo/favicon/faviconZen/faviconZenDarkPink2.ico",
 
     sectIllus3: {
       src: "./assets/meridiensPortrait-320.webp",
@@ -80,10 +80,10 @@ const themes = {
   },
 
   blue: {
-    favicon32: "./assets/logo/favicon/favicon-32Blue.png",
-    favicon96: "./assets/logo/favicon/favicon-96Blue.png",
-    favicon192: "./assets/logo/favicon/favicon-192Blue.png",
-    faviconIco: "./assets/logo/favicon/faviconBlue.ico",
+    favicon32: "./assets/logo/favicon/faviconZen/faviconZenDarkBlue2-32.png",
+    favicon96: "./assets/logo/favicon/faviconZen/faviconZenDarkBlue2-96.png",
+    favicon192: "./assets/logo/favicon/faviconZen/faviconZenDarkBlue2-192.png",
+    faviconIco: "./assets/logo/favicon/faviconZen/faviconZenDarkBlue2.ico",
 
     sectIllus3: {
       src: "./assets/meridiensPortrait-320.webp",
@@ -127,10 +127,10 @@ const themes = {
   },
 
   green: {
-    favicon32: "./assets/logo/favicon/favicon-32Green.png",
-    favicon96: "./assets/logo/favicon/favicon-96Green.png",
-    favicon192: "./assets/logo/favicon/favicon-192Green.png",
-    faviconIco: "./assets/logo/favicon/faviconGreen.ico",
+    favicon32: "./assets/logo/favicon/faviconZen/faviconZenDarkGreen2-32.png",
+    favicon96: "./assets/logo/favicon/faviconZen/faviconZenDarkGreen2-96.png",
+    favicon192: "./assets/logo/favicon/faviconZen/faviconZenDarkGreen2-192.png",
+    faviconIco: "./assets/logo/favicon/faviconZen/faviconZenDarkGreen2.ico",
 
     sectIllus3: {
       src: "./assets/realistic/meridiensPortrait-320.webp",
@@ -193,18 +193,18 @@ function displayNav() {
   if (window.innerWidth > 1500) return;
 
   navUl.classList.toggle("navUlDisplay");
-  it1.classList.toggle("rotateRight");
-  it2.classList.toggle("removeIt2");
-  it3.classList.toggle("rotateLeft");
+  it1.classList.toggle("rotate1");
+  it2.classList.toggle("rotate2");
+  it3.classList.toggle("rotate3");
 }
 
 function displayNotNav() {
   if (window.innerWidth > 1500) return;
 
   navUl.classList.remove("navUlDisplay");
-  it1.classList.remove("rotateRight");
-  it2.classList.remove("removeIt2");
-  it3.classList.remove("rotateLeft");
+  it1.classList.remove("rotate1");
+  it2.classList.remove("rotate2");
+  it3.classList.remove("rotate3");
 }
 
 function scrollChecker() {
@@ -445,3 +445,4 @@ themeBtns.forEach((btn) => {
 
 // État initial
 scrollChecker();
+
