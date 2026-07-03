@@ -1,5 +1,6 @@
 :root[data-theme="green"] {
   --color1: rgb(249, 247, 243);
+  --color1transp: rgba(249, 247, 243, 0.5);
   --color2: rgb(158, 243, 225);
   --color3: rgb(85, 170, 145);
   --color4: rgb(45, 119, 96);
@@ -10,17 +11,18 @@
   --wave3-image: url("./assets/waves/wave2Green.webp");
   --wave-saturation: 1;
   --virginie: url("./assets/realistic/portraitProfil-640.webp");
-  --drop-image: url("./assets/logo/logoh2Green.webp");
+  --drop-image: url("./assets/logo/logo-zen/logoZenGreenH2.webp");
   --bxShadow: inset 0 0 20px rgba(45, 119, 96);
-  --logoFooter-url: url("./assets/logo/logoWhiteGreen.webp");
+  --logoFooter-url: url("./assets/logo/favicon/faviconZen/faviconZenGreen-192.png");
   --phoneIcon-url: url("./assets/icons/phoneIconGreen.png");
-  --scrollLogo: url("./assets/logo/logoTranspGreen.png");
+  --scrollLogo: url("./assets/logo/favicon/faviconZen/faviconZenGreen-192.png");
 
   --accImage: url("./assets/realistic/contact-1280.webp");
 }
 
 :root[data-theme="pink"] {
   --color1: rgb(249, 247, 243);
+  --color1transp: rgba(249, 247, 243, 0.5);
   --color2: rgb(243, 158, 206);
   --color3: rgb(169, 85, 141);
   --color4: rgb(119, 45, 98);
@@ -31,17 +33,18 @@
   --wave3-image: url("./assets/waves/wave2Pink.webp");
   --wave-saturation: 1;
   --virginie: url("./assets/portraitProfil-640.webp");
-  --drop-image: url("./assets/logo/logoh2Pink.webp");
+  --drop-image: url("./assets/logo/logo-zen/logoZenPinkH2.webp");
   --bxShadow: inset 0 0 20px rgba(119, 45, 98);
-  --logoFooter-url: url("./assets/logo/logoWhitePink.webp");
+  --logoFooter-url: url("./assets/logo/favicon/faviconZen/faviconZenPink-192.png");
   --phoneIcon-url: url("./assets/icons/phoneIconPink.png");
-  --scrollLogo: url("./assets/logo/logoTranspPink.png");
+  --scrollLogo: url("./assets/logo/favicon/faviconZen/faviconZenPink-192.png");
 
   --accImage: url("./assets/contact-1280.webp");
 }
 
 :root[data-theme="blue"] {
   --color1: rgb(249, 247, 243);
+  --color1transp: rgba(249, 247, 243, 0.5);
   --color2: rgb(158, 220, 243);
   --color3: rgb(85, 144, 169);
   --color4: rgb(45, 97, 119);
@@ -52,11 +55,11 @@
   --wave3-image: url("./assets/waves/wave2Blue.webp");
   --wave-saturation: 2;
   --virginie: url("./assets/portraitProfil-640.webp");
-  --drop-image: url("./assets/logo/logoh2Blue.webp");
+  --drop-image: url("./assets/logo/logo-zen/logoZenBlueH2.webp");
   --bxShadow: inset 0 0 20px rgba(45, 97, 119);
-  --logoFooter-url: url("./assets/logo/logoWhiteBlue.webp");
+  --logoFooter-url: url("./assets/logo/favicon/faviconZen/faviconZenBlue-192.png");
   --phoneIcon-url: url("./assets/icons/phoneIconBlue.png");
-  --scrollLogo: url("./assets/logo/logoTranspBlue.png");
+  --scrollLogo: url("./assets/logo/favicon/faviconZen/faviconZenBlue-192.png");
 
   --accImage: url("./assets/contact-1280.webp");
 }
@@ -65,6 +68,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.symbol {
+  color: var(--color3);
 }
 
 body {
@@ -248,11 +255,11 @@ nav ul li {
   display: none;
   position: absolute;
   right: 35px;
-  top: 3px;
+  top: 5px;
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background-color: transparent;
+  background-color: var(--color3);
   cursor: pointer;
 }
 
@@ -260,9 +267,9 @@ nav ul li {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
-  width: 28px;
-  height: 2px;
-  background-color: var(--color5);
+  width: fit-content;
+  color: var(--color1);
+  font-size: 35px;
   transition: 0.4s all ease-in-out;
 }
 
@@ -276,28 +283,31 @@ nav ul li {
 }
 
 .it1 {
-  top: 10px;
+  top: 20%;
 }
 .it2 {
-  top: 50%;
+  top: 45%;
 }
 .it3 {
-  bottom: 8px;
+  top: 70%;
 }
 
-.rotateRight {
-  transform: rotateZ(135deg);
-  left: 3px;
-  top: 45%;
-}
-.rotateLeft {
-  transform: rotateZ(-135deg);
-  left: 3px;
-  top: 45%;
+.rotate1 {
+  transform: rotateZ(90deg);
+  left: 0;
+  top: -2px;
 }
 
-.removeIt2 {
-  width: 0;
+.rotate2 {
+  transform: rotateZ(90deg);
+  left: 25%;
+  top: -2px;
+}
+
+.rotate3 {
+  transform: rotateZ(90deg);
+  left: 50%;
+  top: -2px;
 }
 
 /******* waves ***********/
@@ -339,19 +349,20 @@ nav ul li {
 .themeBtn {
   position: fixed;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
   left: 5px;
-  bottom: 5px;
+  bottom: 20px;
   z-index: 1200;
 }
 
 .themeBtn > * {
   width: 50px;
   height: 30px;
-  border: none;
   border-radius: 5px;
+  border: 1px solid black;
   cursor: pointer;
   user-select: none;
   transition: transform 0.2s ease;
@@ -364,7 +375,6 @@ nav ul li {
 .themeBtn > *:focus,
 .themeBtn > *:focus-visible {
   transform: scale(0.8);
-  border: 2px solid black;
   transition: border-color 0.2s ease;
 }
 
@@ -424,13 +434,18 @@ section {
   font-size: 2.5rem;
   color: var(--color4);
   line-height: 50px;
+  text-shadow:
+    -1px -1px 0 var(--color1transp),
+    1px -1px 0 var(--color1transp),
+    -1px 1px 0 var(--color1transp),
+    1px 1px 0 var(--color1transp);
 }
 
 .initiale {
   color: var(--color1);
   font-weight: bold;
   font-size: 1.2em;
-  animation: colorPulse 2s ease-out forwards;
+  animation: colorPulse 4s ease-out forwards;
 }
 
 .nom {
@@ -487,14 +502,15 @@ h1 span {
 
 .drop {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  top: -5px;
-  left: 5px;
-  border-top-left-radius: 40px;
+  transform: translate(0, -50%);
+  width: 75px;
+  height: 75px;
+  top: 50%;
+  left: 3px;
+  border-top-left-radius: 20px;
   background-image: var(--drop-image);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -513,7 +529,7 @@ h4 {
 }
 
 p {
-  text-align: justify;
+  text-align: left;
   font-size: 1.2rem;
   line-height: 30px;
   margin-top: 30px;
@@ -890,21 +906,17 @@ footer .copyright {
   right: 20px;
   width: 40px;
   height: 40px;
+  color: white;
+  font-size: 22px;
   border: none;
   border-radius: 50%;
   background-color: var(--color4);
-  color: white;
-  font-size: 22px;
   cursor: pointer;
   display: none;
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.2s ease;
-}
-
-#backToTop:hover {
-  background-color: var(--color3);
 }
 
 /**  dotnav **/
