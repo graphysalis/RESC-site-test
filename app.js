@@ -7,6 +7,7 @@ const headerTop = document.querySelector(".headerTop");
 const headerNav = document.querySelector(".headerNav");
 
 const btnMenu = document.getElementById("menu");
+const btnMenuItem = document.querySelector(".btnMenuItem");
 const navUl = document.querySelector(".navUl");
 
 const menuLinks = document.querySelectorAll(".menu-link");
@@ -193,18 +194,16 @@ function displayNav() {
   if (window.innerWidth > 1500) return;
 
   navUl.classList.toggle("navUlDisplay");
-  it1.classList.toggle("rotate1");
-  it2.classList.toggle("rotate2");
-  it3.classList.toggle("rotate3");
+  it1.classList.toggle("rotateIt1");
+  btnMenuItem.classList.toggle("switchStyle");
 }
 
 function displayNotNav() {
   if (window.innerWidth > 1500) return;
 
   navUl.classList.remove("navUlDisplay");
-  it1.classList.remove("rotate1");
-  it2.classList.remove("rotate2");
-  it3.classList.remove("rotate3");
+  it1.classList.remove("rotateIt1");
+  btnMenuItem.classList.remove("switchStyle");
 }
 
 function scrollChecker() {
@@ -445,4 +444,3 @@ themeBtns.forEach((btn) => {
 
 // État initial
 scrollChecker();
-
