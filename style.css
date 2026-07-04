@@ -254,65 +254,53 @@ nav ul li {
 .btnMenu {
   display: none;
   position: absolute;
-  margin-top: 10px;
+  margin-top: 7px;
   right: 35px;
   top: 5px;
-  width: 35px;
-  height: 35px;
+  width: fit-content;
+  height: fit-content;
   border-radius: 5px;
-  background-color: var(--color3);
   cursor: pointer;
   z-index: 2000;
 }
 
-.btnMenuItem {
-  position: absolute;
-  left: 5px;
-  width: fit-content;
-  color: var(--color1);
-  font-size: 35px;
-  transition: 0.4s all ease-in-out;
-}
-
-.it1 {
-  top: -16px;
-}
-
-.it2 {
-  top: -6px;
-}
-
-.it3 {
-  top: 4px;
-}
-
-.rotate1 {
-  transform: rotateZ(90deg);
-  left: 0;
-  top: -3px;
-}
-
-.rotate2 {
-  transform: rotateZ(90deg);
-  left: 8px;
-  top: -3px;
-}
-
-.rotate3 {
-  transform: rotateZ(90deg);
-  left: 16px;
-  top: -3px;
-}
-
 .btnMenuTxt {
-  position: absolute;
-  left: -50px;
-  top: 25%;
+  padding: 10px;
   font-size: 1rem;
   font-weight: bold;
   color: var(--color5);
 }
 
+.btnMenuItem {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color3);
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.it1 {
+  font-size: 35px;
+  margin-bottom: 4px;
+  color: var(--color1);
+  transition: 0.4s all ease-in-out;
+}
+
+.rotateIt1 {
+  transform: rotateZ(90deg);
+  color: var(--color3);
+  margin-left: 6px;
+  margin-bottom: 0;
+}
+
+.switchStyle {
+  background-color: var(--color1);
+  border: 1px solid var(--color3);
+}
 /******* waves ***********/
 .wavesContainer {
   position: absolute;
