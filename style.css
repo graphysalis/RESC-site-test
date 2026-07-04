@@ -290,19 +290,19 @@ nav ul li {
 .rotate1 {
   transform: rotateZ(90deg);
   left: 0;
-  top: -2px;
+  top: 0;
 }
 
 .rotate2 {
   transform: rotateZ(90deg);
   left: 25%;
-  top: -2px;
+  top: 0;
 }
 
 .rotate3 {
   transform: rotateZ(90deg);
   left: 50%;
-  top: -2px;
+  top: 0;
 }
 
 .btnMenuTxt {
