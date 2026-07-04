@@ -280,7 +280,6 @@ nav ul li {
   height: 40px;
   background-color: var(--color3);
   border-radius: 5px;
-  border: 1px solid transparent;
 }
 
 .it1 {
@@ -296,8 +295,8 @@ nav ul li {
 
 .switchStyle {
   background-color: var(--color1);
-  border: 1px solid var(--color3);
 }
+
 /******* waves ***********/
 .wavesContainer {
   position: absolute;
