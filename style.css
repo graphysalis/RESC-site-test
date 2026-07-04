@@ -267,24 +267,23 @@ nav ul li {
 
 .btnMenuItem {
   position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
+  left: 5px;
   width: fit-content;
   color: var(--color1);
-  font-size: 2rem;
+  font-size: 35px;
   transition: 0.4s all ease-in-out;
 }
 
 .it1 {
-  top: 20%;
+  top: -16px;
 }
 
 .it2 {
-  top: 45%;
+  top: -6px;
 }
 
 .it3 {
-  top: 70%;
+  top: 4px;
 }
 
 .rotate1 {
@@ -295,13 +294,13 @@ nav ul li {
 
 .rotate2 {
   transform: rotateZ(90deg);
-  left: 25%;
+  left: 8px;
   top: -3px;
 }
 
 .rotate3 {
   transform: rotateZ(90deg);
-  left: 50%;
+  left: 16px;
   top: -3px;
 }
 
