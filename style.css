@@ -285,7 +285,6 @@ nav ul li {
 
 .it1 {
   font-size: 35px;
-  margin-bottom: 4px;
   color: var(--color1);
   transition: 0.4s all ease-in-out;
 }
@@ -293,8 +292,6 @@ nav ul li {
 .rotateIt1 {
   transform: rotateZ(90deg);
   color: var(--color3);
-  margin-left: 6px;
-  margin-bottom: 0;
 }
 
 .switchStyle {
