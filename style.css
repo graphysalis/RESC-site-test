@@ -254,6 +254,7 @@ nav ul li {
 .btnMenu {
   display: none;
   position: absolute;
+  margin-top: 10px;
   right: 35px;
   top: 5px;
   width: 35px;
@@ -261,6 +262,7 @@ nav ul li {
   border-radius: 5px;
   background-color: var(--color3);
   cursor: pointer;
+  z-index: 2000;
 }
 
 .btnMenuItem {
@@ -269,25 +271,18 @@ nav ul li {
   left: 50%;
   width: fit-content;
   color: var(--color1);
-  font-size: 35px;
+  font-size: 2rem;
   transition: 0.4s all ease-in-out;
-}
-
-.btnMenuTxt {
-  position: absolute;
-  left: -50px;
-  top: 25%;
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--color5);
 }
 
 .it1 {
   top: 20%;
 }
+
 .it2 {
   top: 45%;
 }
+
 .it3 {
   top: 70%;
 }
@@ -308,6 +303,15 @@ nav ul li {
   transform: rotateZ(90deg);
   left: 50%;
   top: -2px;
+}
+
+.btnMenuTxt {
+  position: absolute;
+  left: -50px;
+  top: 25%;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color5);
 }
 
 /******* waves ***********/
