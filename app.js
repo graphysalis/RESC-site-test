@@ -1,7 +1,6 @@
 // =========================
 // Sélecteurs DOM
 // =========================
-
 const header = document.querySelector("header");
 const headerTop = document.querySelector(".headerTop");
 const headerNav = document.querySelector(".headerNav");
@@ -37,7 +36,7 @@ const themes = {
     favicon32: "./assets/logo/favicon/faviconZen/faviconZenDarkPink2-32.png",
     favicon96: "./assets/logo/favicon/faviconZen/faviconZenDarkPink2-96.png",
     favicon192: "./assets/logo/favicon/faviconZen/faviconZenDarkPink2-192.png",
-    faviconIco: "./assets/logo/favicon/faviconZen/faviconZenDarkPink2.ico",
+    faviconIco: "./assets/logo/favicon/faviconZen/faviconDarkPink2.ico",
 
     sectIllus3: {
       src: "./assets/meridiensPortrait-320.webp",
@@ -84,7 +83,7 @@ const themes = {
     favicon32: "./assets/logo/favicon/faviconZen/faviconZenDarkBlue2-32.png",
     favicon96: "./assets/logo/favicon/faviconZen/faviconZenDarkBlue2-96.png",
     favicon192: "./assets/logo/favicon/faviconZen/faviconZenDarkBlue2-192.png",
-    faviconIco: "./assets/logo/favicon/faviconZen/faviconZenDarkBlue2.ico",
+    faviconIco: "./assets/logo/favicon/faviconZen/faviconDarkBlue2.ico",
 
     sectIllus3: {
       src: "./assets/meridiensPortrait-320.webp",
@@ -131,7 +130,54 @@ const themes = {
     favicon32: "./assets/logo/favicon/faviconZen/faviconZenDarkGreen2-32.png",
     favicon96: "./assets/logo/favicon/faviconZen/faviconZenDarkGreen2-96.png",
     favicon192: "./assets/logo/favicon/faviconZen/faviconZenDarkGreen2-192.png",
-    faviconIco: "./assets/logo/favicon/faviconZen/faviconZenDarkGreen2.ico",
+    faviconIco: "./assets/logo/favicon/faviconZen/faviconDarkGreen2.ico",
+
+    sectIllus3: {
+      src: "./assets/realistic/meridiensPortrait-320.webp",
+      srcset: `
+    ./assets/realistic/meridiensPortrait-320.webp 320w,
+    ./assets/realistic/meridiensPortrait-640.webp 640w
+    `,
+    },
+
+    sectIllus4: {
+      src: "./assets/realistic/soinsPourTous-320.webp",
+      srcset: `
+    ./assets/realistic/soinsPourTous-320.webp 320w,
+    ./assets/realistic/soinsPourTous-640.webp 640w
+    `,
+    },
+
+    sectIllus5: {
+      src: "./assets/realistic/seanceResc-320.webp",
+      srcset: `
+    ./assets/realistic/seanceResc-320.webp 320w,
+    ./assets/realistic/seanceResc-640.webp 640w
+    `,
+    },
+
+    sectIllus6: {
+      src: "./assets/realistic/tarification-320.webp",
+      srcset: `
+    ./assets/realistic/tarification-320.webp 320w,
+    ./assets/realistic/tarification-640.webp 640w
+    `,
+    },
+
+    sectIllus7: {
+      src: "./assets/realistic/questions-320.webp",
+      srcset: `
+    ./assets/realistic/questions-320.webp 320w,
+    ./assets/realistic/questions-640.webp 640w
+    `,
+    },
+  },
+
+  earthy: {
+    favicon32: "./assets/logo/favicon/faviconZen/faviconZenGrey-32.png",
+    favicon96: "./assets/logo/favicon/faviconZen/faviconZenGrey-96.png",
+    favicon192: "./assets/logo/favicon/faviconZen/faviconZenGrey-192.png",
+    faviconIco: "./assets/logo/favicon/faviconZen/faviconGrey.ico",
 
     sectIllus3: {
       src: "./assets/realistic/meridiensPortrait-320.webp",
@@ -178,6 +224,7 @@ const themeBtns = document.querySelectorAll(".themeBtn button");
 const themeBlue = document.getElementById("themeBlue");
 const themePink = document.getElementById("themePink");
 const themeGreen = document.getElementById("themeGreen");
+const themeEarthy = document.getElementById("themeEarthy");
 // =========================
 // Fonctions utilitaires
 // =========================
