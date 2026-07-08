@@ -15,10 +15,10 @@
   font-size: 1.5rem;
   padding-top: 30px;
   color: var(--color4);
+  text-shadow: -1px 1px 1px rgb(61, 58, 58);
 }
 
 .sectCGU ul li {
   text-align: left;
   font-size: 1.2rem;
 }
-
