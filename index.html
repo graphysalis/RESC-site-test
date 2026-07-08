@@ -32,7 +32,7 @@
     <link
       id="faviconIco"
       rel="shortcut icon"
-      href="./assets/logo/favicon/faviconZen/faviconZenDarkBlue2.ico"
+      href="./assets/logo/favicon/faviconZen/faviconDarkBlue2.ico"
     />
     <meta
       name="keywords"
@@ -51,12 +51,13 @@
     <link rel="stylesheet" href="./media.css">
   </head>
   <body>
+    <div class="background-top"></div>
     <header role="banner">
       <div class="headerTop">
         <div class="leftSide">
           <div class="contact">
             <a
-              href="#" onclick="return false;"
+              href="mailto:virginie.sentenac@free.fr"
               aria-label="Envoyer un email"
             ><img
                 src="./assets/icons/emailIcon.png"
@@ -64,31 +65,31 @@
                 width="20"
                 height="20"
               />
-              contact@monsite.fr
+              virginie.sentenac@free.fr
             </a>
           </div>
           <div class="tel">
-            <a href="#" onclick="return false;" aria-label="mon numéro de mobile"
+            <a href="tel:+33780335263" aria-label="mon numéro de mobile"
               ><img
                 src="./assets/icons/phoneIcon.png"
                 alt="icone mobile"
                 width="20"
                 height="20"
               />
-              06 XX XX XX XX</a
+              (+33)07 80 33 52 63</a
             >
           </div>
         </div>
         <div class="rightSide">
           <div class="socialLinks">
-            <a href="#" onclick="return false;" target="_blank" rel="noopener noreferrer" aria-label="suivez-moi sur Facebook"
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="suivez-moi sur Facebook"
               ><img
                 src="./assets/icons/facebook.png"
                 alt="icone mobile"
                 width="30"
                 height="30"
               /></a> 
-            <a href="#" onclick="return false;" target="_blank" rel="noopener noreferrer" aria-label="suivez-moi sur Instagram"
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="suivez-moi sur Instagram"
               ><img
                 src="./assets/icons/instagram.png"
                 alt="icone mobile"
@@ -179,6 +180,7 @@
       <button data-theme="blue" id="themeBlue">&#x2728;</button>
       <button data-theme="pink" id="themePink">&#x2728;</button>
       <button data-theme="green" id="themeGreen">&#x2728;</button>
+      <button data-theme="earthy" id="themeEarthy">&#x2728;</button>
     </div>
     <main role="main">
       <div id="dotNav">
@@ -211,7 +213,7 @@
             </div>
          </div>
         </div>
-        <div class="nom">Virginie Nom</div>
+        <div class="nom">Virginie Sentenac</div>
           <h1>- Accompagnement RESC -
             <span>Douleur, stress, fatigue, traitements lourds...</span>
             <span>Un accompagnement doux et non invasif.</span>
@@ -254,7 +256,7 @@
         Je serais heureuse de répondre à vos questions<br />et de vous présenter cette méthode lors d'un premier échange!
         </div>
         <div class="animCTA">
-          <a href="#" onclick="return false;" aria-label="mon numéro de mobile">
+          <a href="tel:+33780335263" aria-label="mon numéro de mobile">
             <div class="ctaContent">
               <div class="phoneIcon"></div>
               <div class="text"> Contactez-moi!</div>
@@ -316,6 +318,20 @@
         Les réactions observées peuvent également se manifester de façon différée. Leur nature et leur intensité varient selon la personne, son état du moment.<br /><br />Cette approche vise avant tout à favoriser le mieux-être,
         la détente et une meilleure qualité de vie, dans le respect de la personne et de son parcours de soins.
         </p>
+        <div class="infographicContainer">
+          <div class="infographic1">
+            <div class="bookIcon"></div>
+            <a href="./assets/infographie/infographie-resc.pdf" target="_blank" rel="noopener   noreferrer">
+            Consultez<br />la fiche "RESC"
+            </a>
+          </div>
+          <div class="infographic2">
+            <div class="downloadIcon"></div>
+            <a href="./assets/infographie/infographie-resc.pdf" download>
+            Téléchargez<br />la fiche "RESC"
+            </a>
+          </div>
+        </div>   
       </section>
       <div class="linkSect" id="linkSect4"></div>
       <section id="sect4">
@@ -381,7 +397,7 @@
         >.
         </p>
         <div class="animCTA">
-          <a href="#" onclick="return false;" aria-label="mon numéro de mobile">
+          <a href="tel:+33780335263" aria-label="mon numéro de mobile">
             <div class="ctaContent">
               <div class="phoneIcon"></div>
               <div class="text"> Contactez-moi!</div>
@@ -431,7 +447,7 @@
           Chaque séance est avant tout un temps pour vous, <strong>un moment pour souffler, vous poser et vous reconnecter à vos ressources</strong>, dans un cadre simple, respectueux et bienveillant.
         </p>
         <div class="animCTA">
-          <a href="#" onclick="return false;" aria-label="mon numéro de mobile">
+          <a href="tel:+33780335263" aria-label="mon numéro de mobile">
             <div class="ctaContent">
               <div class="phoneIcon"></div>
               <div class="text"> Contactez-moi!</div>
@@ -481,7 +497,7 @@
         Je reste bien sûr à votre disposition pour toute question ou pour échanger sur la manière dont je peux vous accompagner.
       </p>
       <div class="animCTA">
-        <a href="#" onclick="return false;" aria-label="mon numéro de mobile">
+        <a href="tel:+33780335263" aria-label="mon numéro de mobile">
           <div class="ctaContent">
             <div class="phoneIcon"></div>
             <div class="text"> Contactez-moi!</div>
@@ -543,17 +559,19 @@
         </h3>
         <div class="telbis">
           <h3>Par téléphone</h3>
-          <a href="#" onclick="return false;" aria-label="mon numéro de mobile"
-          > 06 XX XX XX XX
-          </a>
+          <div class="telContainer">
+            <a href="tel:+33780335263" aria-label="mon numéro de mobile"
+            > (+33)07 80 33 52 63</a>
+          </div>
         </div>
         <div class="contactbis"> 
           <h3>par mail</h3>
-          <a
-          href="#" onclick="return false;"
+          <div class="mailContainer">
+            <a
+          href="mailto:virginie.sentenac@free.fr"
           aria-label="accès direct à l'envoi d'un mail"
-          > contact@monsite.fr
-          </a>
+          > virginie.sentenac@free.fr</a> 
+          </div>  
         </div>
         <h3>Lieux d'intervention</h3>
         <p>
@@ -572,7 +590,7 @@
     <footer role="contentinfo">
       <div class="contact">
             <a
-              href="#" onclick="return false;"
+              href="mailto:virginie.sentenac@free.fr"
               aria-label="Envoyer un email"
             >
               <img
@@ -581,29 +599,29 @@
                 width="20"
                 height="20"
               />
-              contact@monsite.fr
+              virginie.sentenac@free.fr
             </a>
-          </div>
-          <div class="tel">
-            <a href="#" onclick="return false;" aria-label="mon numéro de mobile"
+      </div>
+      <div class="tel">
+            <a href="tel:+33780335263" aria-label="mon numéro de mobile"
               ><img
                 src="./assets/icons/phoneIcon.png"
                 alt="icone mobile"
                 width="20"
                 height="20"
               />
-              06 XX XX XX XX</a
+              (+33)07 80 33 52 63</a
             >
-          </div>
+      </div>
       <div class="socialLinks">
-        <a href="#" onclick="return false;" target="_blank" rel="noopener noreferrer" aria-label="suivez-moi sur Facebook"
+        <a href="#bottom" target="_blank" rel="noopener noreferrer" aria-label="suivez-moi sur Facebook"
           ><img
                 src="./assets/icons/facebook.png"
                 alt="icone mobile"
                 width="30"
                 height="30"
               /></a>
-        <a href="#" onclick="return false;" target="_blank" rel="noopener noreferrer" aria-label="suivez-moi sur Instagram"
+        <a href="#bottom" target="_blank" rel="noopener noreferrer" aria-label="suivez-moi sur Instagram"
           ><img
                 src="./assets/icons/instagram.png"
                 alt="icone mobile"
@@ -617,7 +635,7 @@
         >
       </div>
       <div class="copyright">
-        © 2026 Virginie Nom<br />- Tous droits réservés -
+        © 2026 Virginie Sentenac<br />- Tous droits réservés -
       </div>
     </footer>
     <button id="backToTop" title="Retour en haut">
