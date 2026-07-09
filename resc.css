@@ -1,0 +1,24 @@
+.sectRESC {
+  background-color: var(--color1);
+  padding-top: 200px;
+}
+
+.sectRESC h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 40px auto;
+}
+
+.sectRESC h2 {
+  text-align: left;
+  font-size: 1.5rem;
+  padding-top: 30px;
+  color: var(--color3);
+  text-decoration: underline var(--color3);
+}
+
+.sectRESC ul li {
+  text-align: left;
+  font-size: 1.2rem;
+}
