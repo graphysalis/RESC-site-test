@@ -62,6 +62,20 @@
     font-size: 1.8rem;
     line-height: 30px;
   }
+
+  .footerTopContainer {
+    display: block;
+  }
+
+  .footerLeftContainer,
+  .footerRightContainer {
+    width: 100%;
+  }
+
+  .footerLeft,
+  .footerRight {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 530px) {
@@ -130,10 +144,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .btnMenuTxt {
-    display: none;
-  }
-
   #accrocheText {
     font-size: 1.5rem;
     line-height: 25px;
